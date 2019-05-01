@@ -1,0 +1,84 @@
+<div class="main-app-grid">
+  <div class="main-header">
+      <img src="../assets/WeCareDigital.png">
+  </div>
+  <div class="main-nav gradient1">
+    <table class="table">
+      <thead>
+        <tr>
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item" href="#">Apply</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Child Care</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Login</a>
+            </li>
+          </ul>
+        </tr>
+      </thead>
+    </table>
+
+
+  <div class="main-content">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Address</th>
+          <th scope="col">Phone Number</th>
+          <th>
+            <button (click)="addRow()" type="button" class="btn btn-info">+</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of contacts; let i = index">
+          <th scope="row">
+            <input [(ngModel)]="row.ID" type="text" class="form-control" placeholder="ID">
+          </th>
+          <td>
+            <input [(ngModel)]="row.first_name" type="text" class="form-control" placeholder="ID">
+          </td>
+          <td>
+            <input [(ngModel)]="row.last_name" type="text" class="form-control" placeholder="ID">
+          </td>
+          <td>
+            <input [(ngModel)]="row.email" type="text" class="form-control" placeholder="ID">
+          </td>
+          <td>
+            <input [(ngModel)]="row.Address" type="text" class="form-control" placeholder="ID">
+          </td>
+          <td>
+            <input [(ngModel)]="row.phone_number" type="text" class="form-control" placeholder="ID">
+          </td>
+          <td>
+            <div class="btn-group">
+              <button (click)="save(row)" type="button" class="btn btn-success">Save</button>
+              <button (click)="delete(i)" type="button" class="btn btn-danger">X</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="main-footer gradient2">
+
+    <p>Find Us On:</p>
+    <a class="a1" href="https://www.facebook.com/wecare.childcare.5">Facebook</a>
+    <a href="https://www.instagram.com/_wecarechildcare/?hl=en">Instagram</a>
+    <a href="https://twitter.com/wecare4kidz?lang=en">Twitter</a>
+
+  </div>
+</div>
