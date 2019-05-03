@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
-import { ToastService } from '../toast/toast.service';
+import { ToastService } from '../toast1/toast.service';
 import { HttpService } from '../../shared-service/http.service';
 
 export interface IBike {

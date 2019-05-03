@@ -1,0 +1,3 @@
+<div *ngIf="alerts.length" class="alert-container">
+  <alert class="box-shadow" [dismissible]="dismissible" *ngFor="let alert of alerts" [type]="alert.type" [dismissOnTimeout]="alert.timeout" (onClosed)="onClosed(alert)">{{ alert.message }}</alert>
+</div>

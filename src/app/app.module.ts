@@ -15,6 +15,7 @@ import { ApplyComponent } from './apply/apply.component';
     AppComponent,
     HomeComponent,
     LoginComponent,
+
     ApplyComponent,
     // InformationComponent,
     // ToastComponent
